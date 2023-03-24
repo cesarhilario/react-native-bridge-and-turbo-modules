@@ -10,6 +10,8 @@ import {
   Text,
 } from 'react-native';
 
+import RTNCalculator from 'rtn-calculator/js/NativeCalculator';
+
 interface NativeError {
   code: string | number;
   message: string;
@@ -25,6 +27,7 @@ export const Home = () => {
   const [counter, setCounter] = useState(
     NativeModules.Counter.getConstants().initialCount,
   );
+  const [result, setResult] = useState<number | null>(null);
 
   const getConstants = () => {
     setConstants(NativeModules.Counter.getConstants());
@@ -112,6 +115,19 @@ export const Home = () => {
         <Button
           title="Callback with arguments [See the console]"
           onPress={callbackMethodWithArguments}
+        />
+        <Text>Turbo Modules</Text>
+        <Text style={{ marginLeft: 20, marginTop: 20 }}>
+          3+7={result ?? '??'}
+        </Text>
+        <Button
+          title="Compute"
+          onPress={() => {
+            const value = RTNCalculator?.add(3, 7);
+            if (value) {
+              setResult(value);
+            }
+          }}
         />
       </ScrollView>
     </SafeAreaView>

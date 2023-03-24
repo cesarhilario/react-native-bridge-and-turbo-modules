@@ -28,9 +28,8 @@
   },
   "homepage": "https://github.com/cesarhilario/react-native-bridge-and-turbo-modules#readme",
   "scripts": {
-    "add:package": "cd ../app && yarn add ../RTNCalculator && cd ..",
-    "generate:ios": " node ../app/node_modules/react-native/scripts/generate-artifacts.js --path ../app/ --outputPath generated",
-    "generate:android": "cd .. && cd app && cd android && ./gradlew generateCodegenArtifactsFromSchema"
+    "generate:ios": "cd ../app && yarn add ../RTNCalculator && yarn add ../RTNCalculator && cd .. && node app/node_modules/react-native/scripts/generate-artifacts.js  --path app/  --outputPath RTNCalculator/generated &&  cd app/ && yarn add ../RTNCalculator && cd ios && rm -rf Pods/ && RCT_NEW_ARCH_ENABLED=1 pod install",
+    "generate:android": "cd ../app && yarn add ../RTNCalculator && yarn add ../RTNCalculator && cd .. && cd app && cd android && ./gradlew generateCodegenArtifactsFromSchema"
   },
   "devDependencies": {},
   "peerDependencies": {
