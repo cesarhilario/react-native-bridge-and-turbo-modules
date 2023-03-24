@@ -1,0 +1,48 @@
+{
+  "name": "rtn-calculator",
+  "version": "0.0.1",
+  "description": "Add numbers with Turbo Native Modules",
+  "react-native": "js/index",
+  "source": "js/index",
+  "files": [
+    "js",
+    "android",
+    "ios",
+    "rtn-calculator.podspec",
+    "!android/build",
+    "!ios/build",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "keywords": [
+    "react-native",
+    "ios",
+    "android"
+  ],
+  "repository": "https://github.com/cesarhilario/react-native-bridge-and-turbo-modules",
+  "author": "César Hilário <cesar.hilario.dev@gmail.com> (https://github.com/cesarhilario)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cesarhilario/react-native-bridge-and-turbo-modules/issues"
+  },
+  "homepage": "https://github.com/cesarhilario/react-native-bridge-and-turbo-modules#readme",
+  "scripts": {
+    "add:package": "cd ../app && yarn add ../RTNCalculator && cd ..",
+    "generate:ios": " node ../app/node_modules/react-native/scripts/generate-artifacts.js --path ../app/ --outputPath generated",
+    "generate:android": "cd .. && cd app && cd android && ./gradlew generateCodegenArtifactsFromSchema"
+  },
+  "devDependencies": {},
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "codegenConfig": {
+    "name": "RTNCalculatorSpec",
+    "type": "modules",
+    "jsSrcsDir": "js",
+    "android": {
+      "javaPackageName": "com.calculator"
+    }
+  }
+}
