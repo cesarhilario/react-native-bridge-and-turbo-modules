@@ -14,6 +14,15 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-bridgereactnativeexample-bridgereactnativeexampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-bridgereactnativeexample-bridgereactnativeexampleTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8ABE1B8729CCDCFE00967B2F /* Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE1B8629CCDCFE00967B2F /* Swift.swift */; };
+		8ABE1B8A29CCDDCF00967B2F /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE1B8929CCDDCF00967B2F /* Counter.swift */; };
+		8ABE1B8B29CCDDCF00967B2F /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE1B8929CCDDCF00967B2F /* Counter.swift */; };
+		8ABE1B8D29CCDE6600967B2F /* Counter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE1B8C29CCDE6600967B2F /* Counter.m */; };
+		8ABE1B8E29CCDE6600967B2F /* Counter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE1B8C29CCDE6600967B2F /* Counter.m */; };
+		8ABE1B9029CD30AB00967B2F /* CounterEventEmiiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE1B8F29CD30AB00967B2F /* CounterEventEmiiter.swift */; };
+		8ABE1B9129CD30AB00967B2F /* CounterEventEmiiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE1B8F29CD30AB00967B2F /* CounterEventEmiiter.swift */; };
+		8ABE1B9329CD311E00967B2F /* CounterEventEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE1B9229CD311E00967B2F /* CounterEventEmitter.m */; };
+		8ABE1B9429CD311E00967B2F /* CounterEventEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE1B9229CD311E00967B2F /* CounterEventEmitter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +52,13 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-bridgereactnativeexample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bridgereactnativeexample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = bridgereactnativeexample/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-bridgereactnativeexample-bridgereactnativeexampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bridgereactnativeexample-bridgereactnativeexampleTests.release.xcconfig"; path = "Target Support Files/Pods-bridgereactnativeexample-bridgereactnativeexampleTests/Pods-bridgereactnativeexample-bridgereactnativeexampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		8ABE1B8529CCDCFE00967B2F /* bridgereactnativeexample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bridgereactnativeexample-Bridging-Header.h"; sourceTree = "<group>"; };
+		8ABE1B8629CCDCFE00967B2F /* Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift.swift; sourceTree = "<group>"; };
+		8ABE1B8829CCDDCF00967B2F /* bridgereactnativeexampleTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bridgereactnativeexampleTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		8ABE1B8929CCDDCF00967B2F /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		8ABE1B8C29CCDE6600967B2F /* Counter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Counter.m; path = SwiftNativeModule/Counter.m; sourceTree = "<group>"; };
+		8ABE1B8F29CD30AB00967B2F /* CounterEventEmiiter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterEventEmiiter.swift; sourceTree = "<group>"; };
+		8ABE1B9229CD311E00967B2F /* CounterEventEmitter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CounterEventEmitter.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -86,12 +102,16 @@
 		13B07FAE1A68108700A75B9A /* bridgereactnativeexample */ = {
 			isa = PBXGroup;
 			children = (
+				8ABE1B8429CCDCE700967B2F /* SwiftNativeModule */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				8ABE1B8629CCDCFE00967B2F /* Swift.swift */,
+				8ABE1B8529CCDCFE00967B2F /* bridgereactnativeexample-Bridging-Header.h */,
+				8ABE1B8829CCDDCF00967B2F /* bridgereactnativeexampleTests-Bridging-Header.h */,
 			);
 			name = bridgereactnativeexample;
 			sourceTree = "<group>";
@@ -135,6 +155,17 @@
 				00E356EE1AD99517003FC87E /* bridgereactnativeexampleTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8ABE1B8429CCDCE700967B2F /* SwiftNativeModule */ = {
+			isa = PBXGroup;
+			children = (
+				8ABE1B8929CCDDCF00967B2F /* Counter.swift */,
+				8ABE1B8C29CCDE6600967B2F /* Counter.m */,
+				8ABE1B8F29CD30AB00967B2F /* CounterEventEmiiter.swift */,
+				8ABE1B9229CD311E00967B2F /* CounterEventEmitter.m */,
+			);
+			name = SwiftNativeModule;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -204,10 +235,11 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 1400;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -404,6 +436,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ABE1B8B29CCDDCF00967B2F /* Counter.swift in Sources */,
+				8ABE1B9129CD30AB00967B2F /* CounterEventEmiiter.swift in Sources */,
+				8ABE1B8E29CCDE6600967B2F /* Counter.m in Sources */,
+				8ABE1B9429CD311E00967B2F /* CounterEventEmitter.m in Sources */,
 				00E356F31AD99517003FC87E /* bridgereactnativeexampleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,7 +448,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ABE1B8A29CCDDCF00967B2F /* Counter.swift in Sources */,
+				8ABE1B9029CD30AB00967B2F /* CounterEventEmiiter.swift in Sources */,
+				8ABE1B9329CD311E00967B2F /* CounterEventEmitter.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				8ABE1B8729CCDCFE00967B2F /* Swift.swift in Sources */,
+				8ABE1B8D29CCDE6600967B2F /* Counter.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,7 +473,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-bridgereactnativeexample-bridgereactnativeexampleTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -451,6 +494,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "bridgereactnativeexampleTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bridgereactnativeexample.app/bridgereactnativeexample";
 			};
 			name = Debug;
@@ -459,7 +505,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-bridgereactnativeexample-bridgereactnativeexampleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = bridgereactnativeexampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
@@ -475,6 +523,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "bridgereactnativeexampleTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bridgereactnativeexample.app/bridgereactnativeexample";
 			};
 			name = Release;
@@ -499,6 +549,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = bridgereactnativeexample;
+				SWIFT_OBJC_BRIDGING_HEADER = "bridgereactnativeexample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -524,6 +575,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = bridgereactnativeexample;
+				SWIFT_OBJC_BRIDGING_HEADER = "bridgereactnativeexample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
