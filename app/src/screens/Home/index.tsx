@@ -25,8 +25,7 @@ const CounterWithEvents = new NativeEventEmitter(
 export const Home = () => {
   const [constants, setConstants] = useState({});
   const [counter, setCounter] = useState(
-    // NativeModules.Counter.getConstants().initialCount,
-    0,
+    NativeModules.Counter.getConstants().initialCount,
   );
   const [result, setResult] = useState<number | null>(null);
 
