@@ -69,6 +69,7 @@ export const Home = () => {
   const callbackMethodWithArguments = () => {
     NativeModules.Counter.callbackMethodWithArguments(
       (count: unknown, ...otherArguments: unknown[]) => {
+        // TODO: Melhorar android
         console.log('The count is: ', count);
         console.log('Other arguments', otherArguments);
       },

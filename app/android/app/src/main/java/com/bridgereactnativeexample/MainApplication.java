@@ -2,6 +2,8 @@ package com.bridgereactnativeexample;
 
 import android.app.Application;
 import android.content.Context;
+import android.util.Log;
+
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactInstanceManager;
@@ -38,11 +40,21 @@ public class MainApplication extends Application implements ReactApplication {
       };
 
   private final ReactNativeHost mNewArchitectureNativeHost =
-      new MainApplicationReactNativeHost(this);
+      new MainApplicationReactNativeHost(this) {
+        @Override
+        protected List<ReactPackage> getPackages() {
+          @SuppressWarnings("UnnecessaryLocalVariable")
+          List<ReactPackage> packages = new PackageList(this).getPackages();
+          // Packages that cannot be autolinked yet can be added manually here, for example:
+          // packages.add(new MyReactNativePackage());
+          packages.add(new MyAppPackage());
+          return packages;
+        }
+      };
 
   @Override
   public ReactNativeHost getReactNativeHost() {
-    if (BuildConfig.IS_NEW_ARCHITECTURE_ENABLED) {
+    if(BuildConfig.IS_NEW_ARCHITECTURE_ENABLED) {
       return mNewArchitectureNativeHost;
     } else {
       return mReactNativeHost;
