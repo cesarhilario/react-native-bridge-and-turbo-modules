@@ -19,8 +19,8 @@
 		8ABE1B8B29CCDDCF00967B2F /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE1B8929CCDDCF00967B2F /* Counter.swift */; };
 		8ABE1B8D29CCDE6600967B2F /* Counter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE1B8C29CCDE6600967B2F /* Counter.m */; };
 		8ABE1B8E29CCDE6600967B2F /* Counter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE1B8C29CCDE6600967B2F /* Counter.m */; };
-		8ABE1B9029CD30AB00967B2F /* CounterEventEmiiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE1B8F29CD30AB00967B2F /* CounterEventEmiiter.swift */; };
-		8ABE1B9129CD30AB00967B2F /* CounterEventEmiiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE1B8F29CD30AB00967B2F /* CounterEventEmiiter.swift */; };
+		8ABE1B9029CD30AB00967B2F /* CounterEventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE1B8F29CD30AB00967B2F /* CounterEventEmitter.swift */; };
+		8ABE1B9129CD30AB00967B2F /* CounterEventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE1B8F29CD30AB00967B2F /* CounterEventEmitter.swift */; };
 		8ABE1B9329CD311E00967B2F /* CounterEventEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE1B9229CD311E00967B2F /* CounterEventEmitter.m */; };
 		8ABE1B9429CD311E00967B2F /* CounterEventEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABE1B9229CD311E00967B2F /* CounterEventEmitter.m */; };
 /* End PBXBuildFile section */
@@ -57,7 +57,7 @@
 		8ABE1B8829CCDDCF00967B2F /* bridgereactnativeexampleTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bridgereactnativeexampleTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		8ABE1B8929CCDDCF00967B2F /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		8ABE1B8C29CCDE6600967B2F /* Counter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Counter.m; path = SwiftNativeModule/Counter.m; sourceTree = "<group>"; };
-		8ABE1B8F29CD30AB00967B2F /* CounterEventEmiiter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterEventEmiiter.swift; sourceTree = "<group>"; };
+		8ABE1B8F29CD30AB00967B2F /* CounterEventEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterEventEmitter.swift; sourceTree = "<group>"; };
 		8ABE1B9229CD311E00967B2F /* CounterEventEmitter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CounterEventEmitter.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -162,7 +162,7 @@
 			children = (
 				8ABE1B8929CCDDCF00967B2F /* Counter.swift */,
 				8ABE1B8C29CCDE6600967B2F /* Counter.m */,
-				8ABE1B8F29CD30AB00967B2F /* CounterEventEmiiter.swift */,
+				8ABE1B8F29CD30AB00967B2F /* CounterEventEmitter.swift */,
 				8ABE1B9229CD311E00967B2F /* CounterEventEmitter.m */,
 			);
 			name = SwiftNativeModule;
@@ -437,7 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ABE1B8B29CCDDCF00967B2F /* Counter.swift in Sources */,
-				8ABE1B9129CD30AB00967B2F /* CounterEventEmiiter.swift in Sources */,
+				8ABE1B9129CD30AB00967B2F /* CounterEventEmitter.swift in Sources */,
 				8ABE1B8E29CCDE6600967B2F /* Counter.m in Sources */,
 				8ABE1B9429CD311E00967B2F /* CounterEventEmitter.m in Sources */,
 				00E356F31AD99517003FC87E /* bridgereactnativeexampleTests.m in Sources */,
@@ -449,7 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ABE1B8A29CCDDCF00967B2F /* Counter.swift in Sources */,
-				8ABE1B9029CD30AB00967B2F /* CounterEventEmiiter.swift in Sources */,
+				8ABE1B9029CD30AB00967B2F /* CounterEventEmitter.swift in Sources */,
 				8ABE1B9329CD311E00967B2F /* CounterEventEmitter.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				8ABE1B8729CCDCFE00967B2F /* Swift.swift in Sources */,

@@ -41,7 +41,7 @@ class Counter: NSObject {
     callback([count])
   }
 
-  // Passing multiple argumenrs to a callback
+  // Passing multiple arguments to a callback
   @objc
   func callbackMethodWithArguments(_ callback: RCTResponseSenderBlock) {
       callback([
