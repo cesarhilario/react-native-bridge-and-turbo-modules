@@ -15,7 +15,7 @@ $ cd RTNCalculator
 
 ```
 
-To run this command below you need a Mac
+To run the command below you need a Mac
 
 ```bash
 $ yarn generate ios
