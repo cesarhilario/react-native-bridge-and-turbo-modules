@@ -10,37 +10,37 @@ import Foundation
 @objc(Counter)
 class Counter: NSObject {
   private var count = 0;
-  
+
   // How to expose a Swift method
   @objc
   func increment() {
     count += 1;
     print("count is \(count)")
   }
-  
+
   // How to expose static Swift data
   @objc
   func constantsToExport() -> [AnyHashable: Any]! {
     return [
-      
+
       // Examples
       "number": 123.4,
       "string": "foo bar",
       "boolean": true,
       "array": [1, 22.2, "33", false],
       "object": ["a": 1, "b": 2],
-      
+
       // To Export
       "initialCount": count
     ]
   }
-  
+
   // How to exposed a Swift method with a callback
   @objc
   func getCount(_ callback: RCTResponseSenderBlock) {
     callback([count])
   }
-  
+
   // Passing multiple argumenrs to a callback
   @objc
   func callbackMethodWithArguments(_ callback: RCTResponseSenderBlock) {
@@ -52,7 +52,7 @@ class Counter: NSObject {
         ["a": 1, "b": 2] // object
       ])
   }
-  
+
   // How to exposed a Swift promise
   // For this example:
   // resolves by decrementing this count if its greater than 0
@@ -67,9 +67,9 @@ class Counter: NSObject {
       resolve("Count was decremented")
     }
   }
-  
+
   // How to exposed a Swift Event Emitter
-  
+
   @objc
   static func requiresMainQueueSetup() -> Bool {
     return true;

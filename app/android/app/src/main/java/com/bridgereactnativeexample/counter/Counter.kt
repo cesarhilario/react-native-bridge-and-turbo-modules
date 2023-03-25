@@ -9,7 +9,7 @@ import com.facebook.react.bridge.ReactMethod
 class Counter(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
 
     override fun getName(): String {
-        TODO("Not yet implemented")
+       return "Counter"
     }
     
 }
